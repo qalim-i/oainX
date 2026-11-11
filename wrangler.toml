@@ -1,0 +1,14 @@
+name = "oainx"
+main = "worker/index.ts"
+compatibility_date = "2026-11-09"
+
+[secrets]
+required = ["RESEND_API_KEY", "CONTACT_FROM_EMAIL", "CONTACT_TO_EMAIL"]
+
+# Preserve the existing Worker-backed React SPA while invoking Worker code only
+# for API traffic. Static asset requests continue to be served directly.
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+not_found_handling = "single-page-application"

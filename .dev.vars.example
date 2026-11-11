@@ -1,0 +1,5 @@
+# Copy these values into .dev.vars for local Cloudflare Worker testing.
+# Never commit a real API key or production email credentials.
+RESEND_API_KEY=
+CONTACT_FROM_EMAIL=
+CONTACT_TO_EMAIL=

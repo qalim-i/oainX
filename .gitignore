@@ -27,6 +27,9 @@ build/
 .env.production.local
 *.env
 !.env.example
+.dev.vars
+*.dev.vars
+.wrangler/
 
 # TypeScript build info cache
 *.tsbuildinfo
